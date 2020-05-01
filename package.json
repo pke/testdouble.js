@@ -49,7 +49,8 @@
     "preversion": "git pull --rebase && npm run test:ci",
     "version": "npm run version:write && npm run compile && git add src/version.js",
     "postversion": "git push --tags && npm run version:changelog && git push && npm publish",
-    "prepare": "npm run compile"
+    "prepare": "npm run snyk-protect && npm run compile",
+    "snyk-protect": "snyk protect"
   },
   "browser": {
     "./src/replace/module/index.js": "./src/replace/module/index.browser.js",
@@ -86,7 +87,8 @@
     "lodash": "^4.17.10",
     "quibble": "^0.5.5",
     "stringify-object-es5": "^2.5.0",
-    "theredoc": "^1.0.0"
+    "theredoc": "^1.0.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "browserify": "^16.2.0",
@@ -134,5 +136,6 @@
   "license": "MIT",
   "engines": {
     "node": ">= 4.0.0"
-  }
+  },
+  "snyk": true
 }
