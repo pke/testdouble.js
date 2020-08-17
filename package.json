@@ -83,7 +83,7 @@
   },
   "dependencies": {
     "es6-map": "^0.1.5",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.20",
     "quibble": "^0.5.5",
     "stringify-object-es5": "^2.5.0",
     "theredoc": "^1.0.0"
