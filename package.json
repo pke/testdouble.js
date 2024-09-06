@@ -84,7 +84,7 @@
   "dependencies": {
     "es6-map": "^0.1.5",
     "lodash": "^4.17.10",
-    "quibble": "^0.5.5",
+    "quibble": "^0.6.16",
     "stringify-object-es5": "^2.5.0",
     "theredoc": "^1.0.0"
   },
